@@ -6,6 +6,7 @@
 
 #include "eps_src/Generic_eps.hpp"
 #include "FpConfig.hpp"
+#include <Fw/Log/LogString.hpp>
   
 #include "nos_link.h"
 
