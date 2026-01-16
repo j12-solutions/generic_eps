@@ -13,6 +13,8 @@ namespace Nos3
         /* Constructors */
         Generic_epsDataPoint(double count);
         Generic_epsDataPoint(int16_t orbit, int16_t spacecraft, const boost::shared_ptr<Sim42DataPoint> dp);
+        Generic_epsDataPoint(int16_t orbit, int16_t spacecraft, bool in_sun, double sun_vector[3]);
+        ~Generic_epsDataPoint(void) {};
 
         /* Accessors */
         /* Provide the hardware model a way to get the specific data out of the data point */
@@ -26,7 +28,6 @@ namespace Nos3
         /* Disallow these */
         Generic_epsDataPoint(void) {};
         Generic_epsDataPoint(const Generic_epsDataPoint& sdp) : Sim42DataPoint(sdp) {};
-        ~Generic_epsDataPoint(void) {};
 
         /// @name Private mutators
         inline void parse_data_point(void) const {if (_not_parsed) do_parsing();}

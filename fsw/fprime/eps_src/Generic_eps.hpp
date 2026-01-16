@@ -49,7 +49,7 @@ namespace Components {
       //! Destroy Generic_eps object
       ~Generic_eps();
 
-    PRIVATE:
+    private:
 
       // ----------------------------------------------------------------------
       // Handler implementations for commands

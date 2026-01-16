@@ -18,6 +18,14 @@ namespace Nos3
         _sun_vector[2] = count * 0.003;
     }
 
+    Generic_epsDataPoint::Generic_epsDataPoint(int16_t orbit, int16_t spacecraft, bool in_sun, double sun_vector[3]) :
+        _orb(orbit), _sc(spacecraft), _in_sun(in_sun)
+    {
+        _sun_vector[0] = sun_vector[0];
+        _sun_vector[1] = sun_vector[1];
+        _sun_vector[2] = sun_vector[2];
+    }
+
     Generic_epsDataPoint::Generic_epsDataPoint(int16_t orbit, int16_t spacecraft, const boost::shared_ptr<Sim42DataPoint> dp) : 
         _dp(*dp), _orb(orbit), _sc(spacecraft), _not_parsed(true)
     {
