@@ -42,7 +42,7 @@
                         <main-bus-amperage>5.00</main-bus-amperage>
                     </always-on>
                     <switch-0>
-                        <node-name>sample-sim-command-node</node-name>
+                        <node-name>thruster-command</node-name>
                         <voltage>1.23</voltage>
                         <current>4.56</current>
                         <hex-status>00AA</hex-status>
